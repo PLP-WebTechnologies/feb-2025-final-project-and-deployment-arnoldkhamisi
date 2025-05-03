@@ -1,0 +1,123 @@
+/*load custom alarms first*/
+/* @import alarms */
+@import url('alarms.css');
+/* Load custom font first */
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('fonts/DS-DIGIT.TTF') format('truetype');
+  }
+  
+  /* Now you can use the font in other classes */
+  .digital-text {
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 2em;
+    color: #00ff00;
+  }
+    .digital-text2 {
+        font-family: 'DS-Digital', sans-serif;
+        font-size: 1.5em;
+        color: #00ff00;
+    } 
+
+body {
+    background-image: url(img/pexels-iamtausifhossain9321-1226302.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .clock-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image:url(img/pexels-kovyrina-937980.jpg);
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 6px solid #00ffff;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #00ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .analog-clock{
+    .number {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #0ff;
+        font-family: 'Courier New', monospace;
+        font-size: 1em;
+        transform: translate(-50%, -50%);
+    }
+
+    .number3  { top: 155px; left: 290px; }
+    .number6  { top: 280px; left: 150px; }
+    .number9  { top: 155px; left: 15px; }
+    .number12 { top: 15px;  left: 150px; }
+  }
+
+
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    background: #00ffff;
+    transform: rotate(90deg);
+  }
+
+  .hour {
+    width: 6px;
+    height: 50px;
+    background: rgb(255, 0, 242);
+  }
+
+  .minute {
+    width: 4px;
+    height: 120px;
+    background: rgb(251, 0, 255);
+  }
+
+  .second {
+    width: 2px;
+    height: 90px;
+    background: red;
+  }
+
+  .digital-clock {
+    margin-top: 20px;
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 5em;
+    color: #00ffff;
+    letter-spacing: 2px;
+  }
+  #alarm-settings {
+    display: none;
+    position: absolute;
+    top: 310px;
+    background: #111;
+    color: #0ff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0ff;
+  }
+
+  #alarm-settings input, #alarm-settings select {
+    margin: 5px 0;
+    background: #222;
+    color: #0ff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}

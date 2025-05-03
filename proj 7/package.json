@@ -1,0 +1,19 @@
+{
+    "name": "clockapp",
+    "version": "1.0.0",
+    "description": "Analog and Digital Clock Capacitor App",
+    "main": "index.js",
+    "scripts": {
+      "build": "echo 'Build your web assets here if needed'",
+      "start": "npx cap serve",
+      "android": "npx cap open android",
+      "ios": "npx cap open ios"
+    },
+    "dependencies": {
+      "@capacitor/core": "^4.0.0"
+    },
+    "devDependencies": {
+      "@capacitor/cli": "^4.0.0"
+    }
+  }
+  
